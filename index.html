@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Calculadora de IMC en línea</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Calcula tu IMC y toma medidas para mejorar tu bienestar.</h1>
+    </header>
+
+    <main class="container-principal">
+        <div>
+            <img src="https://images.pexels.com/photos/6551070/pexels-photo-6551070.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        </div>
+        <p>
+            El Índice de Masa Corporal, abreviado como IMC, es una herramienta fundamental en el ámbito de la salud y el bienestar. Este índice proporciona una evaluación rápida y sencilla de la relación entre tu peso y tu estatura, lo que te ayuda a comprender tu estado de salud en términos de peso corporal.
+
+            El IMC es una medida universalmente aceptada que se utiliza para determinar si tu peso se encuentra en un rango considerado saludable o si podría estar asociado con ciertos riesgos para la salud. Es importante destacar que el IMC es una herramienta de detección inicial y no un diagnóstico médico completo. Sin embargo, puede ser un punto de partida esencial para tomar decisiones informadas sobre tu salud y bienestar.
+
+            En esta página, te ofrecemos una calculadora de IMC fácil de usar que te permitirá obtener tu propio IMC en cuestión de segundos. Además, te proporcionaremos una interpretación de los resultados para ayudarte a comprender mejor tu estado de salud y tomar medidas si es necesario. Recuerda que el IMC es solo una parte del panorama general de tu salud, por lo que siempre es aconsejable discutir los resultados con un profesional de la salud para obtener una evaluación más completa.
+        </p>
+    </main>
+
+
+    <section class="form-container">
+        <h1>Completa los campos para calcular tu IMC</h1>
+        <form id="formu" class="form">
+            <div class="campos-container">
+                <div class="campos">
+                    <label for="">Peso (kg)</label><br/>
+                    <input id="peso" type="text" placeholder="Ejemplo: 50 Kg">
+                </div>
+                <div class="campos">
+                    <label for="">Altura (m)</label><br/>
+                    <input id="talla" type="text" placeholder="Ejemplo: 1.60 Metros">
+                </div>
+            </div>
+
+
+            
+            <button id="btn" class="btn primary-button">Calcular</button>
+
+
+        </form>
+    </section>
+    <section>
+        <div class="resultado">
+            <p id="resultado"></p>
+        </div>
+
+    </section>
+    <section class="container-cuadro">
+
+        <div>
+            <img class="cuadro" src="./Images/cuadro.jpg" alt="cuadro">
+        </div>
+        
+
+
+
+    </section>
+
+    <section>
+        <div class="resultados-container">
+            <div>
+                <p id="rangosaludable"></p>
+            </div>
+    
+            <div>
+                <p id="estado"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desarrollado por <a href="https://github.com/dani-deacoder">Nilton Daniel Loli Collantes</a></p>
+    </footer>
+
+    <script src="./JS/Main.js"></script>
+</body>
+</html>

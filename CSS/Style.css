@@ -1,0 +1,163 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span{
+    text-align: center;
+}
+
+header{
+    background-color: var(--hospital-green);
+}
+.title{
+    margin: 0;
+    font-size: 24px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: var(--hospital-green);
+    color: var(--white);
+    text-align: center;
+}
+
+
+.container-principal{
+
+    width: 100%;
+    margin: 40px auto ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.container-principal p{
+    margin-right: 10rem;
+}
+
+.container-principal div img{
+    width: 300px;
+    height: auto;
+    margin-top: 20px ;
+    border-radius: 50%;
+}
+
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.form-container{
+    background-color: var(--very-light-pink);
+    width: 600px;
+    margin: 0 auto;
+    border-radius: var(--sm);
+    padding: 24px;
+
+
+
+}
+
+.campos-container{
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+}
+.form input{
+    width: 120px;
+    height: 20px;
+    margin-bottom: var(--md);
+    
+}
+
+.campos{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-cuadro{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+.resultados-container{
+    
+    width: 800px;
+    height: auto;
+
+}
+
+.resultados-container div:nth-child(2),resultados-container div:nth-child(1){
+    width: 500x;
+    padding: 40px;
+}
+@media (max-width:480px){
+    .container-principal{
+        width: 100px;
+        padding: 0;
+        margin: 0;
+        
+      
+    }
+    .container-principal p{
+        width: 250px;
+        padding: 0;
+        margin:10px;
+        
+      
+    }
+    header{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container-principal div img{
+        width: 170px;
+        
+    }
+    .form-container{
+        background-color: var(--very-light-pink);
+        width: 400px;
+        margin: 0 auto;
+        border-radius: var(--sm);
+        padding: 24px;
+    }
+    .cuadro{
+        width: 300px;
+        position:center;
+        padding: 20px;
+    }
+    .resultados-container{
+       
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 760px){
+    .container-principal{
+        padding: 20px;
+        grid-template-columns: 1fr auto;
+    }
+    .resultados-container{
+        padding-top: 20px;
+        width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
